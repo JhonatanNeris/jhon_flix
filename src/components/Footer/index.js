@@ -1,5 +1,7 @@
 import React from 'react';
-import { FooterBase } from './styles';
+
+//Styled components
+import { FooterLogo, FooterBase, FooterImage } from './styles';
 
 //Import Logo
 import Logo from '../../assets/img/Logo.png'
@@ -8,9 +10,9 @@ import Logo from '../../assets/img/Logo.png'
 function Footer() {
   return (
     <FooterBase>
-      <a href="/">
-        <img src={Logo} alt="Logo JHONFLIX"/>
-      </a>
+      <FooterLogo to="/">
+        <FooterImage src={Logo} alt="Logo JHONFLIX"/>
+      </FooterLogo>
       <p>
         Orgulhosamente criado durante a
         {' '}

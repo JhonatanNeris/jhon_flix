@@ -9,7 +9,7 @@ import Carousel from '../../components/Carousel'
 
 const Home = () => {
     return (
-        <div>
+        <>
             <BannerMain
                 videoTitle={data.categorias[0].videos[0].titulo}
                 url={data.categorias[0].videos[0].url}
@@ -40,7 +40,7 @@ const Home = () => {
 
                 category={data.categorias[5]}
             />
-        </div>
+        </>
     )
 }
 

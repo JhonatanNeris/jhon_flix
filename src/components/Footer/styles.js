@@ -1,3 +1,5 @@
+//Import do router dom
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 
@@ -16,3 +18,18 @@ export const FooterBase = styled.footer`
 
   
 `;
+
+export const FooterLogo = styled(Link)`  
+`;
+
+export const FooterImage = styled.img`
+  max-width: 168px;
+  
+  @media(max-width: 800px) {
+  
+    max-width: 105px;
+  
+}
+`;
+
+

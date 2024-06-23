@@ -15,23 +15,37 @@ import CadastroCategoria from './pages/CadastroCategoria';
 //Router
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
+//Import styled components
+import styled from 'styled-components';
+
+const Main = styled.main`
+  background-color: var(--black);
+  color: var(--white);
+  flex: 1;
+  /* padding-top: 50px; */
+  /* padding-left: 5%; */
+  /* padding-right: 5%; */
+`;
+
 
 function App() {
   return (
-    <div style={{ background: "#141414" }}>
+    <>
       <BrowserRouter>
-      <Menu />
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path='/cadastro/video' element={<CadastroVideo/>}/>
-          <Route path='/cadastro/categoria' element={<CadastroCategoria/>}/>
-          <Route path='*' element={<Pagina404/>}/>
-        </Routes>
-      <Footer />
+        <Menu />
+        <Main>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/cadastro/video' element={<CadastroVideo />} />
+            <Route path='/cadastro/categoria' element={<CadastroCategoria />} />
+            <Route path='*' element={<Pagina404 />} />
+          </Routes>
+        </Main>
+        <Footer />
       </BrowserRouter>
 
 
-    </div>
+    </>
   );
 }
 
