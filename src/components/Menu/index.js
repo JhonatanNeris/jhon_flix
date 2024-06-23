@@ -9,16 +9,19 @@ import './Menu.css'
 //Import styled components
 import Button from '../Button'
 
+//React Router dom
+import { Link } from 'react-router-dom'
+
 //Import de components
 //import ButtonLink from './components/ButtonLink'
 
 const Menu = () => {
     return (
         <nav className='Menu'>
-            <a href='/'>
+            <Link to='/'>
                 <img src={Logo} alt="logo" className='Logo' />
-            </a>
-            <Button as="a" className='ButtonLink' href='/'>
+            </Link>
+            <Button as={Link} className='ButtonLink' to='/cadastro/video'>
                 Novo vídeo
             </Button>
         </nav>
