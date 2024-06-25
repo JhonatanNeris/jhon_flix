@@ -62,14 +62,14 @@ const CadastroCategoria = () => {
         <FormField
           value={values.nome}
           onChange={handleChange}
-          type={"text"}
+          type="text"
           name="nome"
           label="Nome da categoria"
         />
         <FormField
           value={values.descricao}
           onChange={handleChange}
-          type={"text"}
+          type="textarea"
           name="descricao"
           label="Descrição"
         />
