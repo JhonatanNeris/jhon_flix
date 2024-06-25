@@ -6,10 +6,21 @@ import data from "../../data/dados_iniciais.json"
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel'
 
+//Styled components
+import styled from 'styled-components';
+
+const Main = styled.main`
+  background-color: var(--black);
+  color: var(--white);
+  flex: 1;
+  /* padding-top: 50px; */
+  /* padding-left: 5%; */
+  /* padding-right: 5%; */
+`;
 
 const Home = () => {
     return (
-        <>
+        <Main>
             <BannerMain
                 videoTitle={data.categorias[0].videos[0].titulo}
                 url={data.categorias[0].videos[0].url}
@@ -40,7 +51,7 @@ const Home = () => {
 
                 category={data.categorias[5]}
             />
-        </>
+        </Main>
     )
 }
 

@@ -6,6 +6,7 @@ import styled from 'styled-components';
 const Container = styled.ul`
   padding: 0;
   margin: 0;
+  list-style: none;
   .slick-prev,
   .slick-next {
     z-index: 50;
@@ -21,11 +22,13 @@ const Container = styled.ul`
   }
   
   .slick-prev {
-    left: 0;
+    left: 4px;
   }
   .slick-next {
     right: 16px;
   }
+
+  
 `;
 
 export const SliderItem = styled.li`
@@ -48,6 +51,7 @@ const Slider = ({ children }) => (
       centerMode: false,
       variableWidth: true,
       adaptiveHeight: true,
+      // centerMode: true,
     }}
     >
       {children}
