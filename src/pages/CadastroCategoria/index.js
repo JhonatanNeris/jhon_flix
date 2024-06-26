@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 //Styled components
 import styled from 'styled-components';
 
 //React Router Dom
-import { Link } from 'react-router-dom';
+import { Link, json } from 'react-router-dom';
 
 //Components
 import FormField from '../../components/FormFiled';
@@ -51,7 +51,22 @@ const CadastroCategoria = () => {
     e.preventDefault()
     setCategorias([...categorias, values])
     setValues(valoresIniciais)
+    console.log(categorias)
   }
+
+  useEffect(() => {
+    const URL = "http://localhost:8000/categorias"
+    
+    fetch(URL).then( async (res)=> {
+      const resposta = await res.json()
+      console.log(resposta)
+      setCategorias([
+        ...resposta,
+      ])
+    })
+
+
+  },[])
 
   return (
     <Main>
@@ -90,7 +105,7 @@ const CadastroCategoria = () => {
         {categorias.map((categoria, index) => {
           return (
             <li key={`${categoria}${index}`}>
-              <p>{categoria.nome}</p>
+              <p>{categoria.titulo}</p>
               {/* <p>{categoria.descricao}</p> */}
             </li>
           )
