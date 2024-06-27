@@ -1,245 +1,251 @@
 {
-    "categorias": [
-      {
-        "id": 1,
-        "titulo": "Mais assistidos",
-        "cor": "#6BD1FF",
-        "link_extra": {
-          "text": "Formação de Front End na Alura",
-          "url": "https://www.alura.com.br/cursos-online-front-end"
-        }
-      },
-      {
-        "id": 2,
-        "titulo": "Ação e aventura",
-        "cor": "#00C86F",
-        "link_extra": {
-          "text": "Cursos de Back End na Alura",
-          "url": "https://www.alura.com.br/cursos-online-programacao"
-        }
-      },
-      {
-        "id": 3,
-        "titulo": "Comédia",
-        "cor": "#9cd33b",
-        "link_extra": {
-          "text": "Cursos de Data Science na Alura",
-          "url": "https://www.alura.com.br/cursos-online-mobile"
-        }
-      },
-      {
-        "id": 4,
-        "titulo": "Ficção científica",
-        "cor": "orange"
-      },
-      {
-        "id": 5,
-        "titulo": "Animação",
-        "cor": "red",
-        "link_extra": {
-          "text": "Formação de Jogos na Alura",
-          "url": "https://www.alura.com.br/cursos-online-front-end"
-        }
+  "categorias": [
+    {
+      "id": 1,
+      "titulo": "Mais assistidos",
+      "cor": "#6BD1FF",
+      "link_extra": {
+        "text": "Formação de Front End na Alura",
+        "url": "https://www.alura.com.br/cursos-online-front-end"
       }
-    ],
-    "videos": [
-      {
-        "id": 1,
-        "categoriaId": 1,
-        "titulo": "Oppenheimer",
-        "url": "https://www.youtube.com/watch?v=8CSD32QFLW8"
-      },
-      {
-        "id": 2,
-        "categoriaId": 1,
-        "titulo": "Todos Menos Você",
-        "url": "https://www.youtube.com/watch?v=_Z4teLriob8"
-      },
-      {
-        "id": 3,
-        "categoriaId": 1,
-        "titulo": "Aquaman 2: O Reino Perdido",
-        "url": "https://www.youtube.com/watch?v=EiQ65vkuHI0"
-      },
-      {
-        "id": 4,
-        "categoriaId": 1,
-        "titulo": "Beekeeper - Rede de Vingança",
-        "url": "https://www.youtube.com/watch?v=NDAc6S0oXJk"
-      },
-      {
-        "id": 5,
-        "categoriaId": 1,
-        "titulo": "Minha Irmã & Eu",
-        "url": "https://www.youtube.com/watch?v=3jnKjyT9yI4"
-      },
-      {
-        "id": 6,
-        "categoriaId": 1,
-        "titulo": "Nefarious",
-        "url": "https://www.youtube.com/watch?v=shQti91B1Rs"
-      },
-      {
-        "id": 7,
-        "categoriaId": 1,
-        "titulo": "Wonka",
-        "url": "https://www.youtube.com/watch?v=esxmdQoyccM"
-      },
-      {
-        "id": 8,
-        "categoriaId": 1,
-        "titulo": "Amor de redenção",
-        "url": "https://www.youtube.com/watch?v=5NqBvGUOpCo"
-      },
-      {
-        "id": 9,
-        "categoriaId": 1,
-        "titulo": "Velozes e Furiosos 10",
-        "url": "https://www.youtube.com/watch?v=ZJUtiZyU-rQ"
-      },
-      {
-        "id": 10,
-        "categoriaId": 2,
-        "titulo": "ESQUEMA DE RISCO: OPERAÇÃO FORTUNE",
-        "url": "https://www.youtube.com/watch?v=h3O2HzVHFGs"
-      },
-      {
-        "id": 11,
-        "categoriaId": 2,
-        "titulo": "Aquaman 2: O Reino Perdido",
-        "url": "https://www.youtube.com/watch?v=EiQ65vkuHI0"
-      },
-      {
-        "id": 12,
-        "categoriaId": 2,
-        "titulo": "Jogos Vorazes: A Cantiga Dos Pássaros e Das Serpentes",
-        "url": "https://www.youtube.com/watch?v=mJANgVEMUR4"
-      },
-      {
-        "id": 13,
-        "categoriaId": 2,
-        "titulo": "A Chamada",
-        "url": "https://www.youtube.com/watch?v=Acok1Z6cyl4"
-      },
-      {
-        "id": 14,
-        "categoriaId": 2,
-        "titulo": "Lucy",
-        "url": "https://www.youtube.com/watch?v=q0LpmGWIZBk"
-      },
-      {
-        "id": 15,
-        "categoriaId": 2,
-        "titulo": "John Wick: Chapter 4",
-        "url": "https://www.youtube.com/watch?v=SaaipeXx1js"
-      },
-      {
-        "id": 16,
-        "categoriaId": 2,
-        "titulo": "O Protetor (Legendado)",
-        "url": "https://www.youtube.com/watch?v=NSY-eobbqlU"
-      },
-      {
-        "id": 17,
-        "categoriaId": 3,
-        "titulo": "Barbie",
-        "url": "https://www.youtube.com/watch?v=-yKtIaTDi24"
-      },
-      {
-        "id": 18,
-        "categoriaId": 3,
-        "titulo": "Trem-Bala",
-        "url": "https://www.youtube.com/watch?v=HQpEMjKWDg4"
-      },
-      {
-        "id": 19,
-        "categoriaId": 3,
-        "titulo": "Cidade Perdida",
-        "url": "https://www.youtube.com/watch?v=0tY2vqcdioY"
-      },
-      {
-        "id": 20,
-        "categoriaId": 3,
-        "titulo": "Correndo Atrás de Um Pai",
-        "url": "https://www.youtube.com/watch?v=29aK_TplF_s"
-      },
-      {
-        "id": 21,
-        "categoriaId": 3,
-        "titulo": "O Pior Vizinho do Mundo",
-        "url": "https://www.youtube.com/watch?v=ZHa1GZA8jnQ"
-      },
-      {
-        "id": 22,
-        "categoriaId": 3,
-        "titulo": "Todos Menos Você",
-        "url": "https://www.youtube.com/watch?v=_Z4teLriob8"
-      },
-      {
-        "id": 23,
-        "categoriaId": 3,
-        "titulo": "Os Farofeiros",
-        "url": "https://www.youtube.com/watch?v=2cvGfBosn1Q"
-      },
-      {
-        "id": 24,
-        "categoriaId": 3,
-        "titulo": "Minha Mãe é Uma Peça 3: O Filme",
-        "url": "https://www.youtube.com/watch?v=r0agY59BJa8"
-      },
-      {
-        "id": 25,
-        "categoriaId": 4,
-        "titulo": "Avatar: The Way of Water",
-        "url": "https://www.youtube.com/watch?v=chy-CAOeGdI"
-      },
-      {
-        "id": 26,
-        "categoriaId": 4,
-        "titulo": "Homem-aranha 2 (LEG)",
-        "url": "https://www.youtube.com/watch?v=47e9eW9SXSA"
-      },
-      {
-        "id": 27,
-        "categoriaId": 4,
-        "titulo": "PI",
-        "url": "https://www.youtube.com/watch?v=Tlqplk0eAeU"
-      },
-      {
-        "id": 28,
-        "categoriaId": 4,
-        "titulo": "Jogador Nº 1",
-        "url": "https://www.youtube.com/watch?v=dGurgPE-wb8"
-      },
-      {
-        "id": 29,
-        "categoriaId": 4,
-        "titulo": "Vida",
-        "url": "https://www.youtube.com/watch?v=HM6d2fyaP7M"
-      },
-      {
-        "id": 30,
-        "categoriaId": 4,
-        "titulo": "Dune",
-        "url": "https://www.youtube.com/watch?v=wHME15TWMno"
-      },
-      {
-        "id": 31,
-        "categoriaId": 4,
-        "titulo": "Valerian e a Cidade dos Mil Planetas (Dublado)",
-        "url": "https://www.youtube.com/watch?v=gQ5YjzZCjEg"
-      },
-      {
-        "id": 32,
-        "categoriaId": 4,
-        "titulo": "Não! Não olhe! (Nope)",
-        "url": "https://www.youtube.com/watch?v=wrGe7uG7opk"
-      },
-      {
-        "id": 33,
-        "categoriaId": 5,
-        "titulo": "Debaixo do píer (Under The Boardwalk)",
-        "url": "https://www.youtube.com/watch?v=5lBRXoj4Z-M"
+    },
+    {
+      "id": 2,
+      "titulo": "Ação e aventura",
+      "cor": "#00C86F",
+      "link_extra": {
+        "text": "Cursos de Back End na Alura",
+        "url": "https://www.alura.com.br/cursos-online-programacao"
       }
-    ]
-  }
+    },
+    {
+      "id": 3,
+      "titulo": "Comédia",
+      "cor": "#9cd33b",
+      "link_extra": {
+        "text": "Cursos de Data Science na Alura",
+        "url": "https://www.alura.com.br/cursos-online-mobile"
+      }
+    },
+    {
+      "id": 4,
+      "titulo": "Ficção científica",
+      "cor": "orange"
+    },
+    {
+      "id": 5,
+      "titulo": "Animação",
+      "cor": "red",
+      "link_extra": {
+        "text": "Formação de Jogos na Alura",
+        "url": "https://www.alura.com.br/cursos-online-front-end"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "Oppenheimer",
+      "url": "https://www.youtube.com/watch?v=8CSD32QFLW8"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "Todos Menos Você",
+      "url": "https://www.youtube.com/watch?v=_Z4teLriob8"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "titulo": "Aquaman 2: O Reino Perdido",
+      "url": "https://www.youtube.com/watch?v=EiQ65vkuHI0"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "titulo": "Beekeeper - Rede de Vingança",
+      "url": "https://www.youtube.com/watch?v=NDAc6S0oXJk"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "titulo": "Minha Irmã & Eu",
+      "url": "https://www.youtube.com/watch?v=3jnKjyT9yI4"
+    },
+    {
+      "id": 6,
+      "categoriaId": 1,
+      "titulo": "Nefarious",
+      "url": "https://www.youtube.com/watch?v=shQti91B1Rs"
+    },
+    {
+      "id": 7,
+      "categoriaId": 1,
+      "titulo": "Wonka",
+      "url": "https://www.youtube.com/watch?v=esxmdQoyccM"
+    },
+    {
+      "id": 8,
+      "categoriaId": 1,
+      "titulo": "Amor de redenção",
+      "url": "https://www.youtube.com/watch?v=5NqBvGUOpCo"
+    },
+    {
+      "id": 9,
+      "categoriaId": 1,
+      "titulo": "Velozes e Furiosos 10",
+      "url": "https://www.youtube.com/watch?v=ZJUtiZyU-rQ"
+    },
+    {
+      "id": 10,
+      "categoriaId": 2,
+      "titulo": "ESQUEMA DE RISCO: OPERAÇÃO FORTUNE",
+      "url": "https://www.youtube.com/watch?v=h3O2HzVHFGs"
+    },
+    {
+      "id": 11,
+      "categoriaId": 2,
+      "titulo": "Aquaman 2: O Reino Perdido",
+      "url": "https://www.youtube.com/watch?v=EiQ65vkuHI0"
+    },
+    {
+      "id": 12,
+      "categoriaId": 2,
+      "titulo": "Jogos Vorazes: A Cantiga Dos Pássaros e Das Serpentes",
+      "url": "https://www.youtube.com/watch?v=mJANgVEMUR4"
+    },
+    {
+      "id": 13,
+      "categoriaId": 2,
+      "titulo": "A Chamada",
+      "url": "https://www.youtube.com/watch?v=Acok1Z6cyl4"
+    },
+    {
+      "id": 14,
+      "categoriaId": 2,
+      "titulo": "Lucy",
+      "url": "https://www.youtube.com/watch?v=q0LpmGWIZBk"
+    },
+    {
+      "id": 15,
+      "categoriaId": 2,
+      "titulo": "John Wick: Chapter 4",
+      "url": "https://www.youtube.com/watch?v=SaaipeXx1js"
+    },
+    {
+      "id": 16,
+      "categoriaId": 2,
+      "titulo": "O Protetor (Legendado)",
+      "url": "https://www.youtube.com/watch?v=NSY-eobbqlU"
+    },
+    {
+      "id": 17,
+      "categoriaId": 3,
+      "titulo": "Barbie",
+      "url": "https://www.youtube.com/watch?v=-yKtIaTDi24"
+    },
+    {
+      "id": 18,
+      "categoriaId": 3,
+      "titulo": "Trem-Bala",
+      "url": "https://www.youtube.com/watch?v=HQpEMjKWDg4"
+    },
+    {
+      "id": 19,
+      "categoriaId": 3,
+      "titulo": "Cidade Perdida",
+      "url": "https://www.youtube.com/watch?v=0tY2vqcdioY"
+    },
+    {
+      "id": 20,
+      "categoriaId": 3,
+      "titulo": "Correndo Atrás de Um Pai",
+      "url": "https://www.youtube.com/watch?v=29aK_TplF_s"
+    },
+    {
+      "id": 21,
+      "categoriaId": 3,
+      "titulo": "O Pior Vizinho do Mundo",
+      "url": "https://www.youtube.com/watch?v=ZHa1GZA8jnQ"
+    },
+    {
+      "id": 22,
+      "categoriaId": 3,
+      "titulo": "Todos Menos Você",
+      "url": "https://www.youtube.com/watch?v=_Z4teLriob8"
+    },
+    {
+      "id": 23,
+      "categoriaId": 3,
+      "titulo": "Os Farofeiros",
+      "url": "https://www.youtube.com/watch?v=2cvGfBosn1Q"
+    },
+    {
+      "id": 24,
+      "categoriaId": 3,
+      "titulo": "Minha Mãe é Uma Peça 3: O Filme",
+      "url": "https://www.youtube.com/watch?v=r0agY59BJa8"
+    },
+    {
+      "id": 25,
+      "categoriaId": 4,
+      "titulo": "Avatar: The Way of Water",
+      "url": "https://www.youtube.com/watch?v=chy-CAOeGdI"
+    },
+    {
+      "id": 26,
+      "categoriaId": 4,
+      "titulo": "Homem-aranha 2 (LEG)",
+      "url": "https://www.youtube.com/watch?v=47e9eW9SXSA"
+    },
+    {
+      "id": 27,
+      "categoriaId": 4,
+      "titulo": "PI",
+      "url": "https://www.youtube.com/watch?v=Tlqplk0eAeU"
+    },
+    {
+      "id": 28,
+      "categoriaId": 4,
+      "titulo": "Jogador Nº 1",
+      "url": "https://www.youtube.com/watch?v=dGurgPE-wb8"
+    },
+    {
+      "id": 29,
+      "categoriaId": 4,
+      "titulo": "Vida",
+      "url": "https://www.youtube.com/watch?v=HM6d2fyaP7M"
+    },
+    {
+      "id": 30,
+      "categoriaId": 4,
+      "titulo": "Dune",
+      "url": "https://www.youtube.com/watch?v=wHME15TWMno"
+    },
+    {
+      "id": 31,
+      "categoriaId": 4,
+      "titulo": "Valerian e a Cidade dos Mil Planetas (Dublado)",
+      "url": "https://www.youtube.com/watch?v=gQ5YjzZCjEg"
+    },
+    {
+      "id": 32,
+      "categoriaId": 4,
+      "titulo": "Não! Não olhe! (Nope)",
+      "url": "https://www.youtube.com/watch?v=wrGe7uG7opk"
+    },
+    {
+      "id": 33,
+      "categoriaId": 5,
+      "titulo": "Debaixo do píer (Under The Boardwalk)",
+      "url": "https://www.youtube.com/watch?v=5lBRXoj4Z-M"
+    },
+    {
+      "titulo": "Vascão",
+      "url": "https://www.youtube.com/watch?v=y3k5oRCdFpg",
+      "categoriaId": 1,
+      "id": 34
+    }
+  ]
+}

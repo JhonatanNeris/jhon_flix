@@ -8,6 +8,10 @@ import { Link, json } from 'react-router-dom';
 
 //Components
 import FormField from '../../components/FormFiled';
+import Button from '../../components/Button';
+
+//Hooks
+import useForm from '../../hooks/useForm';
 
 const Main = styled.main`
   background-color: var(--black);
@@ -20,44 +24,29 @@ const Main = styled.main`
 
 const CadastroCategoria = () => {
 
-  const valoresIniciais = {
-    nome: "",
-    descricao:"",
-    cor: "#e50914",
-  }
-
   // UseState
   const [categorias, setCategorias] = useState([])
-  const [values, setValues] = useState(valoresIniciais)
 
-  const setValue = (chave, valor) => {
-    setValues({
-      ...values,
-      [chave]: valor,
+  const valoresIniciais = {
+    nome: "",
+    descricao: "",
+    cor: "#e50914",
+  }  
 
-    })
-  }
-
-  const handleChange = (info) => {
-    
-    setValue(
-      info.target.getAttribute('name'),
-      info.target.value
-    )
-  }
+  const { handleChange, values, clearForm } = useForm(valoresIniciais);
 
 
   const handleSubmit = (e) => {
     e.preventDefault()
     setCategorias([...categorias, values])
-    setValues(valoresIniciais)
+    clearForm()
     console.log(categorias)
   }
 
   useEffect(() => {
     const URL = "https://jhon-flix-db.onrender.com/categorias"
-    
-    fetch(URL).then( async (res)=> {
+
+    fetch(URL).then(async (res) => {
       const resposta = await res.json()
       console.log(resposta)
       setCategorias([
@@ -66,14 +55,14 @@ const CadastroCategoria = () => {
     })
 
 
-  },[])
+  }, [])
 
   return (
     <Main>
       <h1>Cadastro de Categoria: {values.nome}</h1>
 
       <form onSubmit={handleSubmit}>
-        
+
         <FormField
           value={values.nome}
           onChange={handleChange}
@@ -95,10 +84,10 @@ const CadastroCategoria = () => {
           name="cor"
           label="Cor"
         />
-        
-        <button>
+
+        <Button>
           Cadastrar
-        </button>
+        </Button>
       </form>
 
       <ul>
