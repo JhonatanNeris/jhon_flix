@@ -55,7 +55,7 @@ const CadastroCategoria = () => {
   }
 
   useEffect(() => {
-    const URL = "http://localhost:8080/categorias"
+    const URL = "https://jhon-flix-db.onrender.com/categorias"
     
     fetch(URL).then( async (res)=> {
       const resposta = await res.json()
