@@ -55,7 +55,7 @@ const CadastroCategoria = () => {
   }
 
   useEffect(() => {
-    const URL = "http://localhost:8000/categorias"
+    const URL = "http://localhost:8080/categorias"
     
     fetch(URL).then( async (res)=> {
       const resposta = await res.json()
