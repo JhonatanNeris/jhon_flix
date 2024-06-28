@@ -13,6 +13,9 @@ import Button from '../../components/Button';
 //Hooks
 import useForm from '../../hooks/useForm';
 
+//URL
+import config from '../../config'
+
 const Main = styled.main`
   background-color: var(--black);
   color: var(--white);
@@ -28,25 +31,26 @@ const CadastroCategoria = () => {
   const [categorias, setCategorias] = useState([])
 
   const valoresIniciais = {
-    nome: "",
+    titulo: "",
     descricao: "",
     cor: "#e50914",
-  }  
+  }
 
   const { handleChange, values, clearForm } = useForm(valoresIniciais);
 
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    console.log("valores", values)
     setCategorias([...categorias, values,])
+    addCategory(values)
     clearForm()
-    console.log(categorias)
   }
 
   useEffect(() => {
     const URL = window.location.hostname.includes('localhost')
-    ? 'http://localhost:8080/categorias'
-    : "https://jhon-flix-db.onrender.com/categorias"
+      ? 'http://localhost:8080/categorias'
+      : "https://jhon-flix-db.onrender.com/categorias"
 
     fetch(URL).then(async (res) => {
       const resposta = await res.json()
@@ -59,17 +63,42 @@ const CadastroCategoria = () => {
 
   }, [])
 
+  useEffect(() => {
+    console.log('Categorias updated:', categorias);
+  }, [categorias]);
+
+  const URL_CATEGORIAS = `${config.URL_BACKEND}/categorias`;
+
+  function addCategory(categoryObject) {
+    return fetch(`${URL_CATEGORIAS}`, {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json',
+      },
+      body: JSON.stringify(categoryObject),
+    })
+      .then(async (respostaDoServidor) => {
+        if (respostaDoServidor.ok) {
+          const resposta = await respostaDoServidor.json();
+          return resposta;
+        }
+
+        throw new Error('Não foi possível cadastrar os dados :(');
+      });
+  }
+
+
   return (
     <Main>
-      <h1>Cadastro de Categoria: {values.nome}</h1>
+      <h1>Cadastro de Categoria: {values.titulo}</h1>
 
       <form onSubmit={handleSubmit}>
 
         <FormField
-          value={values.nome}
+          value={values.titulo}
           onChange={handleChange}
           type="text"
-          name="nome"
+          name="titulo"
           label="Nome da categoria"
         />
         <FormField
@@ -91,6 +120,13 @@ const CadastroCategoria = () => {
           Cadastrar
         </Button>
       </form>
+
+      {categorias.length === 0 && (
+        <div>
+          {/* Cargando... */}
+          Loading...
+        </div>
+      )}
 
       <ul>
         {categorias.map((categoria, index) => {

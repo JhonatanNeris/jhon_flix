@@ -24,6 +24,12 @@
       "id": 5,
       "titulo": "Animação",
       "cor": "red"
+    },
+    {
+      "titulo": "Jogos",
+      "descricao": "jogos em geral",
+      "cor": "#9c00f0",
+      "id": 6
     }
   ],
   "videos": [
@@ -230,6 +236,12 @@
       "url": "https://www.youtube.com/watch?v=zHOxiETNNOA",
       "categoriaId": 5,
       "id": 34
+    },
+    {
+      "titulo": "GAMEPLAY e TUDO sobre BLACK OPS 6: Fui até a TREYARCH e HÁ MUITO PRA FALAR!!",
+      "url": "https://www.youtube.com/watch?v=DqaHs_3ZjvY&t=1222s",
+      "categoriaId": 6,
+      "id": 35
     }
   ]
 }
