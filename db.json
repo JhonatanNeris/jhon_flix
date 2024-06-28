@@ -3,29 +3,17 @@
     {
       "id": 1,
       "titulo": "Mais assistidos",
-      "cor": "#6BD1FF",
-      "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
-      }
+      "cor": "#6BD1FF"
     },
     {
       "id": 2,
       "titulo": "Ação e aventura",
-      "cor": "#00C86F",
-      "link_extra": {
-        "text": "Cursos de Back End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-programacao"
-      }
+      "cor": "#00C86F"
     },
     {
       "id": 3,
       "titulo": "Comédia",
-      "cor": "#9cd33b",
-      "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/cursos-online-mobile"
-      }
+      "cor": "#9cd33b"
     },
     {
       "id": 4,
@@ -35,11 +23,7 @@
     {
       "id": 5,
       "titulo": "Animação",
-      "cor": "red",
-      "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
-      }
+      "cor": "red"
     }
   ],
   "videos": [
@@ -242,9 +226,9 @@
       "url": "https://www.youtube.com/watch?v=5lBRXoj4Z-M"
     },
     {
-      "titulo": "Vascão",
-      "url": "https://www.youtube.com/watch?v=y3k5oRCdFpg",
-      "categoriaId": 1,
+      "titulo": "Jumbo - Filme Completo Dublado - Animação | Cine Animado",
+      "url": "https://www.youtube.com/watch?v=zHOxiETNNOA",
+      "categoriaId": 5,
       "id": 34
     }
   ]

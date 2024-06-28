@@ -38,13 +38,15 @@ const CadastroCategoria = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    setCategorias([...categorias, values])
+    setCategorias([...categorias, values,])
     clearForm()
     console.log(categorias)
   }
 
   useEffect(() => {
-    const URL = "https://jhon-flix-db.onrender.com/categorias"
+    const URL = window.location.hostname.includes('localhost')
+    ? 'http://localhost:8080/categorias'
+    : "https://jhon-flix-db.onrender.com/categorias"
 
     fetch(URL).then(async (res) => {
       const resposta = await res.json()

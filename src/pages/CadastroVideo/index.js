@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState} from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
 //Styled components
@@ -13,6 +13,7 @@ import useForm from '../../hooks/useForm';
 
 //Videos
 import videosRepository from '../../repositories/videos'
+import categoriesRepository from '../../repositories/categories'
 
 const Main = styled.main`
   background-color: var(--black);
@@ -32,17 +33,47 @@ const valoresIniciais = {
 const CadastroVideo = () => {
 
   //Redirecionar página
-  const navigate = useNavigate();
+  const navigate = useNavigate();  
+  
+  const [categorias, setCategorias] = useState([])
+  const categoryTitles = categorias.map(({ titulo }) => titulo);
+  
+  const valoresIniciais = {
+    titulo: "",
+    url: "",
+    categoria: "",
+  }
+
+  useEffect(()=>{
+    categoriesRepository
+      .getAll()
+      .then((categories) => {
+        setCategorias(categories)
+
+      })
+
+  },[])
+
+  console.log(categorias)
 
   const { handleChange, values, clearForm } = useForm(valoresIniciais);
+
+  console.log("adsadasdas",categoryTitles)
+
 
   const handleSubmit = (e) => {
     e.preventDefault()
 
+    const categoriaEscolhida = categorias.find((categoria) => {
+      return categoria.titulo === values.categoria;
+    })
+
+    console.log(categoriaEscolhida)
+
     videosRepository.create({
       titulo: values.titulo,
       url: values.url,
-      categoriaId: 1,
+      categoriaId: categoriaEscolhida.id,
     }).then(() => {
       console.log('Cadastro de vídeo com sucesso!')
       navigate("/")
@@ -50,6 +81,7 @@ const CadastroVideo = () => {
     })
 
   }
+
 
   return (
     <Main>
@@ -73,9 +105,9 @@ const CadastroVideo = () => {
         <FormField
           value={values.categoria}
           onChange={handleChange}
-          // type="text"
           name="categoria"
           label="Categoria"
+          suggestions={categoryTitles}
         />
 
         <Button type='submit'>
